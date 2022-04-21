@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js">
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js"></script>
+</head>
+<body>
+  
+<!-- navbar -->
+<div class="topnav header" id="myHeader">
+  <a class="active" href="#home">Menu</a>
+  <input type="text" placeholder="Search for..">
+</div>
+<!-- side nav  -->
+<div class="sidenav">
+  <a href="#about">Dashboard</a>
+  <a href="#services">Tax Payer</a>
+  <a href="#clients">Return</a>
+  <a href="#contact">Report</a>
+  <a href="#contact">Setting</a>
+  <a href="#contact">Help</a>
+</div>
+<!-- content  -->
+<div class="main" >
+  <h2 class="heading">Dashboard</h2>
+  <!-- cards  -->
+  <div class="row mx-auto mt-4">
+    <div class="col-sm-12 col-md-12 col-lg-4" >
+      <div class="card" id="carea1">
+        <div class="card-body">
+          <h2 class="card-title ml-2">Total Sales</h2>
+          <p class="card-text text-right num pr-3">1800</p>
+          <p class="card-text mb-3 detail ml-2" >Last year expenses</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4" >
+      <div class="card" id="carea2">
+        <div class="card-body">
+          <h2 class="card-title ml-2">Clients</h2>
+          <p class="card-text text-right num pr-3">$600</p>
+          <p class="card-text mb-3 detail ml-2" >Clients profit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-4" >
+      <div class="card" id="carea3">
+        <div class="card-body">
+          <h2 class="card-title ml-2">Followers</h2>
+          <p class="card-text text-right num pr-3">45K+</p>
+          <p class="card-text mb-3 detail ml-2" >People intrested</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- charts section  -->
+  <div class="container">
+    <div class="row">
+      <div class="chart col-lg-6 col-sm-12">
+      <h2 class="mt-4" >Sales Report</h2>
+      <div  id = "container1" style = "height: 400px;  ">
+      </div>
+      </div>
+      <!-- chart 2  -->
+      <div class="chart2 col-lg-6 col-sm-12">
+        <h2 class="mt-4" >Business Trends</h2>
+      <div id = "container2" style = " height: 400px;  ">
+      </div>
+      </div>
+    </div>
+    <!-- table section  -->
+    <h2 class="mt-2 mb-4" >Tax Return Status</h2>
+    <table class="table table-responsive-md table-hover">
+      <thead>
+        <tr >
+          <th class="pl-4" scope="col">Sr.No</th>
+          <th scope="col">Company Name</th>
+          <th scope="col">Branch</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="pl-5" scope="row">1</th>
+          <td>Johny Jhon</td>
+          <td>Ahmedabad</td>
+          <td><button class="text-center" style="background-color:#DE3434;">Pending</button></td>
+        </tr>
+        <tr>
+          <th class="pl-5" scope="row">2</th>
+          <td>Venom Sales</td>
+          <td>Surat</td>
+          <td><button class="text-center" style="background-color:#318609;">Completed</button></td>
+        </tr>
+        <tr>
+          <th class="pl-5" scope="row">3</th>
+          <td>Richie Rich</td>
+          <td>Rajkot</td>
+          <td><button class="text-center" style="background-color:#069090;">In Progress</button></td>
+        </tr>
+        <tr>
+          <th class="pl-5" scope="row">4</th>
+          <td>Ruby Trailor</td>
+          <td>Baroda</td>
+          <td><button class="text-center" style="background-color:#DE3434;">Pending</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- ledger balance chart  -->
+    
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12 mx-auto" >
+      <h2 class="mt-4" >Ledger Balance Chart</h2>
+      <div class="mx-auto"  id = "container" style = " height: 400px;">
+      </div>
+    </div>
+      <div class="col-lg-5 mx-auto col-md-6 col-sm-12 goals" >
+        <h2 class="text-center mt-4 mb-5">Goal Completion</h2>
+
+<p>Add Products to cart</p>
+<div class="containerb">
+  <div class="skills html"></div>
+</div>
+
+<p>Complete purchase</p>
+<div class="containerb">
+  <div class="skills css"></div>
+</div>
+
+<p>Visit premium page</p>
+<div class="containerb">
+  <div class="skills js"></div>
+</div>
+
+<p>Send Inquries</p>
+<div class="containerb">
+  <div class="skills php"></div>
+</div>
+
+      </div>
+    
+    <!-- goals -->
+    </div>
+  </div>
+<!-- main div ending tag -->
+<!-- footer  -->
+
+<div class="footer mt-3">
+  <p class="pt-3 pl-3">Copyrights@ 2010-2021. All rights reserved</p>
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html> 
